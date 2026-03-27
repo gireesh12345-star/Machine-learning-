@@ -1,7 +1,5 @@
-# Meta-Learning — Learning to Learn
+# Meta-Learning Learning to Learn
 ### How MAML Learns an Initialisation That Adapts to Any Task in a Few Gradient Steps
-
-**MLNN Tutorial | University of Hertfordshire | 2025**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
@@ -11,7 +9,7 @@
 
 ## What is this?
 
-This repository contains the complete tutorial submission for the MLNN Assignment at the University of Hertfordshire. The tutorial teaches **meta-learning**, with a focus on **MAML (Model-Agnostic Meta-Learning)** — the most influential optimisation-based meta-learning algorithm.
+This repository contains the complete tutorial submission for the MLNN Assignment at the University of Hertfordshire. The tutorial teaches **meta-learning**, with a focus on **MAML (Model-Agnostic Meta-Learning)** the most influential optimisation-based meta-learning algorithm.
 
 **Core question MAML answers:** What initialisation θ* allows a model to fine-tune to any new task in the fewest possible gradient steps?
 
@@ -30,22 +28,22 @@ This repository contains the complete tutorial submission for the MLNN Assignmen
 
 ## Tutorial Overview
 
-### Section 1 — The Meta-Learning Framework
+### Section 1 - The Meta-Learning Framework
 Taxonomy of three families: optimisation-based (MAML, Reptile), metric-based (ProtoNet, MatchNet), model-based (SNAIL, NTM). MAML algorithm steps with formal equations.
 
-### Section 2 — MAML Deep Dive
+### Section 2 - MAML Deep Dive
 Formal objective, inner loop implementation with `create_graph=True`, outer meta-update, why second-order gradients matter.
 
-### Section 3 — Experiments: Sinusoid Regression
+### Section 3 - Experiments: Sinusoid Regression
 Standard MAML benchmark. Real training results: meta-loss 5.65 → 1.26 over 400 iterations. Adaptation comparison showing MAML vs random initialisation on unseen tasks.
 
-### Section 4 — K-Shot Analysis
+### Section 4 - K-Shot Analysis
 Adaptation curves for K=1,5,10,20 support examples. MAML vs random across gradient step budgets.
 
-### Section 5 — Algorithm Comparison
+### Section 5 - Algorithm Comparison
 MAML vs Reptile vs ProtoNet vs MatchNet across key dimensions.
 
-### Section 6 — Why MAML Works
+### Section 6 - Why MAML Works
 Geometric interpretation (flat regions) and Bayesian interpretation (amortised inference). Connection to regularisation, transfer learning, and Siamese networks.
 
 ---
@@ -82,7 +80,7 @@ pip install torch numpy matplotlib
 jupyter notebook meta_learning_tutorial.ipynb
 ```
 
-All data is **generated synthetically** (sinusoid tasks) — no external downloads needed.
+All data is **generated synthetically** (sinusoid tasks) no external downloads needed.
 
 ### Running order
 
@@ -100,12 +98,12 @@ All data is **generated synthetically** (sinusoid tasks) — no external downloa
 
 ## Accessibility
 
-- **Colourblind-safe** — tab10 palette throughout
-- **Dual encoding** — line plots use colour + distinct styles/markers
-- **Diagram accessibility** — taxonomy boxes contain text labels, readable without colour
-- **Structured headings** — H1/H2/H3 for screen reader navigation
-- **Figure captions** — full descriptive captions on every figure
-- **Code comments** — every non-obvious line explained inline
+- **Colourblind-safe** tab10 palette throughout
+- **Dual encoding** line plots use colour + distinct styles/markers
+- **Diagram accessibility** taxonomy boxes contain text labels, readable without colour
+- **Structured headings** H1/H2/H3 for screen reader navigation
+- **Figure captions** full descriptive captions on every figure
+- **Code comments** every non-obvious line explained inline
 
 ---
 
@@ -122,11 +120,3 @@ All data is **generated synthetically** (sinusoid tasks) — no external downloa
 5. Hospedales, T., Antoniou, A., Micaelli, P. and Storkey, A. (2022) 'Meta-learning in neural networks: A survey', *IEEE TPAMI*, 44(9). https://arxiv.org/abs/2004.05439
 
 ---
-
-## Licence
-
-MIT — see [LICENSE](LICENSE). Free to use, adapt, and build on with attribution.
-
----
-
-**Author:** University of Hertfordshire — MLNN Assignment 2025
